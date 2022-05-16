@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_colour_blue"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="118dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/pathout_icon"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/pathout_logos_white_angled" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="96dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="30sp"
+        android:text = "Welcome"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id = "@+id/usernamePlace"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        />
+</LinearLayout>

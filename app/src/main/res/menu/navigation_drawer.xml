@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/free_navigation"
+            android:icon="@drawable/ic_baseline_speaker_notes_24"
+            android:title="Free Navigation" />
+
+        <item
+            android:id="@+id/navigation_saved"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="Preset Journeys" />
+        <item
+            android:id="@+id/navigation_compass"
+            android:icon="@drawable/ic_baseline_compass_calibration_24"
+            android:title="Compass" />
+    </group>
+
+    <item android:title="Bottom Sheet">
+        <menu>
+            <item
+                android:id="@+id/navigation_journey"
+                android:icon="@drawable/ic_baseline_navigation_24"
+                android:title="Start Journey" />
+
+            <item
+                android:id="@+id/navigation_transport"
+                android:icon="@drawable/ic_baseline_directions_transit_24"
+                android:title="Transport Mode" />
+        </menu>
+
+    </item>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navigation_graph"
+                    android:icon="@drawable/ic_baseline_auto_graph_24"
+                    android:title="Report" />
+
+                <item
+                    android:id="@+id/navigation_account"
+                    android:icon="@drawable/ic_baseline_account_box_24"
+                    android:title="Account" />
+
+                <item
+                    android:id="@+id/navigation_logout"
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    android:title="Logout" />
+            </group>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Preferences">
+        <menu>
+            <item
+                android:id="@+id/navigation_settings"
+                android:icon="@drawable/ic_baseline_rate_review_24"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/set_backup"
+                android:icon="@drawable/ic_baseline_schedule_24"
+                android:title="Notification Centre" />
+        </menu>
+
+    </item>
+
+
+</menu>

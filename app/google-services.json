@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "280295053224",
+    "project_id": "pathout-63e43",
+    "storage_bucket": "pathout-63e43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280295053224:android:6f7781a6d4aa3bcce56f9d",
+        "android_client_info": {
+          "package_name": "com.monash.pathout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280295053224-19nli9sfskvf14g0ok1lefrsfaenhh0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp2GODMzg4gszPiMCPj4s0cBvuwcsYEyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280295053224-19nli9sfskvf14g0ok1lefrsfaenhh0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

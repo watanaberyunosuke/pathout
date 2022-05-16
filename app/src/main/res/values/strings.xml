@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Pathout</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiY3poYTI2OSIsImEiOiJjbDEwN3llN2wyNjA3M2RtdTljYnRpb3c5In0.QcjJJoHvPEKgGDrP7WbD2Q</string>
+    <string name="title_location_permission" />
+    <string name="text_location_permission" />
+    <string name="ok" />
+    <string name="bus">Bus</string>
+    <string name="train">Train</string>
+    <string name="tram">Tram</string>
+    <string name="cycle">Cycle</string>
+    <string name="walk">Walk</string>
+    <string name="e_scooter">E-Scooter</string>
+    <string name="start_a_journey">Start a journey</string>
+    <string name="transport_mode_nearby_stops">transport_mode_nearby_stops</string>
+    <string name="route_number">Route number</string>
+    <string name="stop_distance">Stop distance</string>
+    <string name="stop_name">Stop Name</string>
+    <string name="route_name">Route Name</string>
+    <string name="route_schedule">Route Schedule</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="there_are_no_departures_found">There are no departures found</string>
+    <string name="there_are_no_nearby_stops_found_for_this_transport_mode">There are no nearby stops found for this transport mode.</string>
+    <string name="departures">Departures</string>
+    <string name="to_destination">To: Destination</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="default_backup_time">Time Not Set</string>
+    <string name="backing_up">Backing Up</string>
+    <string name="sync_header">Sync Header</string>
+</resources>

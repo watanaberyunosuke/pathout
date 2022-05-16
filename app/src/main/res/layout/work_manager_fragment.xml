@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2EB9FF"
+    android:orientation="vertical"
+    tools:context=".work_manager.WorkManagerFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/scheduledNotificationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/default_backup_time"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_inverseOnSurface"
+        android:textSize="40sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectNotificationTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:text="SELECT TIME"
+        android:textAlignment="center"
+        android:textColor="@color/theme_colour_blue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scheduleNotificationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:text="SCHEDULE NOTIFICATION"
+        android:textAlignment="center"
+        android:textColor="@color/theme_colour_blue"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nowNotificationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:text="SHOW NOTIFICATION NOW"
+        android:textAlignment="center"
+        android:textColor="@color/theme_colour_blue"
+        android:textStyle="bold" />
+</LinearLayout>

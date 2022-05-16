@@ -1,0 +1,19 @@
+<resources>
+    <!-- Navigation Method Preference -->
+    <string-array name="navigation_method_entries">
+        <item>Cycling</item>
+        <item>Driving</item>
+        <item>Walking</item>
+    </string-array>
+
+    <string-array name="map_styles">
+        <item>Streets</item>
+        <item>Outdoors</item>
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Satellite</item>
+        <item>Satellite Streets</item>
+        <item>Traffic Day</item>
+        <item>Traffic Night</item>
+    </string-array>
+</resources>

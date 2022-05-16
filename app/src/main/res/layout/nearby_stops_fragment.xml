@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:filterTouchesWhenObscured="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:transitionGroup="true"
+    android:transitionName="@string/transport_mode_nearby_stops">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emptyNearbyStops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/there_are_no_nearby_stops_found_for_this_transport_mode"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/nearbyStopsProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVStops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+</LinearLayout>

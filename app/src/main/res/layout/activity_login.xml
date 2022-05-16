@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_colour_blue"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/top_space"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:src="@drawable/pathout_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/pathout_logos" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:backgroundTint="@color/theme_colour_light_blue"
+            android:textColorHint="#CEF1DCDC"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:autofillHints="emailAddress" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:textAlignment="center"
+            android:backgroundTint="@color/theme_colour_light_blue"
+            android:textColorHint="#CEF1DCDC"
+            android:textColor = '#FFFF'
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:autofillHints="password" />
+
+
+        <Button
+            android:id="@+id/signinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/theme_colour_light_blue"
+            android:gravity="center"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/theme_colour_blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Or"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="0.5"
+            android:text="Create an Account"
+            android:textAlignment="center"
+            android:backgroundTint="@color/theme_colour_light_blue"
+            android:textColor="@color/theme_colour_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ViewStub
+        android:id="@+id/viewStub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

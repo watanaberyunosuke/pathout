@@ -1,0 +1,8 @@
+<resources>
+    <style name="Widget.Theme.Material3.DayNight.NoActionBar.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="colorPrimary">#B5E1F8</item>
+        <item name="colorOnSurface">#B5E1F8</item>
+    </style>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/report_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Showing journey history for all journeys"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/number_of_journeys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Number of journeys: " />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/number_of_journeys_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/number_of_journeys"
+        android:text="Loading..." />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_distance_covered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_of_journeys"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Total distance covered: " />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_distance_covered_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_of_journeys"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/total_distance_covered"
+        android:text="Loading..." />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_time_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_distance_covered"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Total time spent: " />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/total_time_spent_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_distance_covered_val"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/total_time_spent"
+        android:text="Loading..." />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/graph_fragment_container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/total_time_spent"
+        android:layout_marginTop="20dp" />
+
+
+</RelativeLayout>
+

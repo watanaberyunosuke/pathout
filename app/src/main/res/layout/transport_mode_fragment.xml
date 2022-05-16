@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:transitionGroup="true"
+    android:transitionName="transport_mode_nearby_stops">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/md_theme_light_background"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="PTV Transport Modes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/busBtn"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawableTop="@drawable/ic_baseline_directions_bus_24"
+                android:text="@string/bus"
+                android:textColor="@color/md_theme_light_tertiary"
+                android:backgroundTint="@color/theme_colour_light_blue"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tramBtn"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:drawableTop="@drawable/ic_baseline_tram_24"
+                android:text="@string/tram"
+                android:textColor="@color/md_theme_light_tertiary"
+                android:backgroundTint="@color/theme_colour_light_blue"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/trainBtn"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_baseline_train_24"
+                android:text="@string/train"
+                android:textColor="@color/md_theme_light_tertiary"
+                android:backgroundTint="@color/theme_colour_light_blue"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/disruptionsBtn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_baseline_new_releases_24"
+            android:text="Disruptions"
+            android:textColor="@color/md_theme_light_tertiary"
+            android:backgroundTint="@color/theme_colour_light_blue"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newsBtn"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_baseline_announcement_24"
+            android:text="News"
+            android:textColor="@color/md_theme_light_tertiary"
+            android:backgroundTint="@color/theme_colour_light_blue"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

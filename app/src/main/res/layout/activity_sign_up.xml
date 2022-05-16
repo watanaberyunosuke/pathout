@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_colour_blue"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:src="@drawable/pathout_icon" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:text = "Please Register"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:hint="Username"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor='#FFFF'
+        android:textColorHint="#CEF1DCDC" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="First Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lastNameEditText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="Last Name"
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEditText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:rotationX="0"
+        android:autofillHints="emailAddress" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="postalAddress"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:hint="Postal Address"
+        android:inputType="textPostalAddress"
+        android:rotationX="0"
+        android:textAlignment="center"
+        android:textColor='#FFFF'
+        android:textColorHint="#CEF1DCDC" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/phoneNumberEditText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="Mobile Number"
+        android:inputType="phone" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordEditText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:hint="Password (must be longer than 6 characters)"
+        android:inputType="textPassword" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/reenterPasswordEditText"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:textColorHint="#CEF1DCDC"
+        android:textColor = '#FFFF'
+        android:hint="Re-enter Password (Passwords must match)"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFF" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/theme_colour_light_blue"
+        android:text="Sign Up"
+        android:textColor="@color/md_theme_light_tertiary"
+        android:textStyle="bold" />
+
+</LinearLayout>

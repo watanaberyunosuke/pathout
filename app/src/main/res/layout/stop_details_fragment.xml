@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/stopTypeImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:background="@color/md_theme_light_surface"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_tram_24"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:strokeColor="@color/md_theme_light_secondary"
+        app:strokeWidth="5dp" />
+
+    <TextView
+        android:id="@+id/stopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/stopTypeImage"
+        android:text="@string/stop_name"
+        android:textColor="@color/md_theme_light_tertiary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stopDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/stopTypeImage"
+        android:drawablePadding="2dp"
+        android:text="@string/stop_distance" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/routeDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopDistance"
+        android:layout_toEndOf="@id/stopTypeImage"
+        app:dividerInsetEnd="20dp"
+        app:dividerInsetStart="10dp" />
+
+    <TextView
+        android:id="@+id/departure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopTypeImage"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="2dp"
+        android:text="@string/departures"
+        android:textAlignment="center"
+        android:textColor="@color/md_theme_light_secondary"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/deptProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/departure"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVDepartures"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/deptProgressBar"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+</RelativeLayout>
